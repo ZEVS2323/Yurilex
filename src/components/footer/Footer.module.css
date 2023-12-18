@@ -1,0 +1,109 @@
+/* Footer section */
+.footer {
+  background-color: #001529;
+}
+
+/* Main container for footer information */
+.footerInfoContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 64px 24px 80px;
+}
+
+/* Logo and description container */
+.boxInfoLogo {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  padding: 0 32px;
+}
+
+/* Logo styling */
+.boxInfoLogo img {
+  max-width: 180px;
+}
+
+/* General information container */
+.boxInfo {
+  flex: 0 0 25%;
+  padding: 0 32px;
+  height: 200px;
+}
+
+/* Logo margin styling */
+.logo {
+  margin-bottom: 24px;
+}
+
+/* Header styling */
+.header {
+  font-size: 21px;
+  color: #ccc;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+/* Description styling */
+.description {
+  color: #999;
+  font-size: 12px;
+  margin-top: -20px;
+}
+
+/* Link styling */
+.link {
+  color: #999;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Hover effect for links */
+.link:hover {
+  color: rgb(0, 140, 192);
+  transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Top line styling */
+.footerTopLine {
+  border-top: 1px solid rgba(233, 233, 233, 0.1);
+}
+
+/* Copyright information styling */
+.footerCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  color: #999;
+  line-height: 80px;
+}
+
+/* Media query for screens up to 768px width */
+@media screen and (max-width: 768px) {
+  .footerInfoContainer {
+    padding: 64px 24px 32px;
+  }
+  .boxInfoLogo {
+    flex: 0 0 100%;
+    margin: 0 0 64px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .boxInfo {
+    flex: 0 0 100%;
+    margin-bottom: 32px;
+  }
+
+  .footerCopyright {
+    font-size: 12px;
+    margin: 0 auto 24px;
+  }
+  .description {
+    text-align: center;
+  }
+}

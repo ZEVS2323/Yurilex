@@ -1,0 +1,95 @@
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001529;
+  color: #ffffff;
+  min-height: 64px;
+}
+
+/* Header container styles */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* Header logo styles */
+.headerLogo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image styles */
+.logoImg {
+  height: 50px;
+  width: 150px;
+}
+
+/* Header menu styles */
+.headerMenu {
+  display: flex;
+}
+
+/* Menu item styles */
+.menuItem {
+  box-sizing: border-box;
+  padding: 0 20px;
+  line-height: 64px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+/* Hover state for menu item */
+.menuItem:hover {
+  color: rgb(0, 140, 192);
+  transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom-color: rgb(0, 140, 192);
+}
+
+.headerBurger {
+  display: none;
+}
+
+/* @media (max-width: 767px) {
+  .headerBurger {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 14px;
+    cursor: pointer;
+    top: 24px;
+    right: 24px
+  }
+  .headerBurger span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 6px
+  }
+
+  .headerBurger::before,
+  .headerBurger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .headerBurger::before {
+    top: 0;
+  }
+  .headerBurger::after {
+    bottom: 0;
+  }
+  .headerMenu{
+    position: fixed;
+    background-color:#001529;
+  }
+} */
